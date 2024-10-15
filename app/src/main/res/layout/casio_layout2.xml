@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivityNew"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5sp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textMayTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:backgroundTint="#A8A8A8"
+            android:text="Máy tính" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/editNum1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@android:drawable/edit_text"
+            android:hint="Nhập số 1" />
+
+        <EditText
+            android:id="@+id/editNum2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@android:drawable/edit_text"
+            android:hint="Nhập số 2" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@android:drawable/edit_text"
+            android:text="Kết quả" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </TableRow>
+
+    <TableRow android:paddingTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cộng" />
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trừ" />
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhân" />
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chia" />
+
+    </TableRow>
+</TableLayout>

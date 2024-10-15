@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OnTX1</string>
+    <string-array name="day_a_week">
+        <item>7 Ngày</item>
+        <item>6 Ngày</item>
+        <item>5 Ngày</item>
+        <item>4 Ngày</item>
+        <item>3 Ngày</item>
+        <item>2 Ngày</item>
+        <item>1 Ngày</item>
+    </string-array>
+</resources>

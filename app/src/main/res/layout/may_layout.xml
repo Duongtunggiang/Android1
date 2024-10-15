@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:stretchColumns="1"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <TableRow android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên báo thức:" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập tên báo thức"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Thời gian" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonSang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sáng" />
+
+            <RadioButton
+                android:id="@+id/radioButtonChieu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Chiều" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textLap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lặp lại" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lặp lại" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textDayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày trong tuần" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textSoLanDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lần đặt" />
+
+        <EditText
+            android:id="@+id/editTextSoLanDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập số lần đặt"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_span="1"
+            android:text="Xóa" />
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_weight="1"
+            android:text="thêm" />
+
+        <Button
+            android:id="@+id/btnTong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng Kết" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Số lần đặt báo thức: 0" />
+</TableLayout>
